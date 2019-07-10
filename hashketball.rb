@@ -170,8 +170,9 @@ def player_numbers(string)
   game_hash
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
+                      binding.pry
           if valuesNameColorsPlayers[0].include?(string)
-            binding.pry
+
             valuesNameColorsPlayers[0][string][:number]
           end
         end

@@ -198,3 +198,15 @@ def player_stats(string)
         end
     end
 end
+
+def big_shoe_rebounds(string)
+  game_hash
+  
+    game_hash.each do |homeAwayKey, teamColorsPlayers|
+        teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
+          if valuesNameColorsPlayers[0].include?(string)
+            return valuesNameColorsPlayers[0][string]
+          end
+        end
+    end
+end

@@ -218,3 +218,21 @@ def big_shoe_rebounds
   return game_hash[:home][:players][0].values[3][:rebounds]
 end
 
+def most_points_scored
+  game_hash
+  array = []
+  array << game_hash[:home][:players][0].values[0][:shoe]
+  array << game_hash[:home][:players][0].values[1][:shoe]
+  array << game_hash[:home][:players][0].values[2][:shoe]
+  array << game_hash[:home][:players][0].values[3][:shoe]
+  array << game_hash[:home][:players][0].values[4][:shoe]
+  
+  array << game_hash[:away][:players][0].values[0][:shoe]
+  array << game_hash[:away][:players][0].values[1][:shoe]
+  array << game_hash[:away][:players][0].values[2][:shoe]
+  array << game_hash[:away][:players][0].values[3][:shoe]
+  array << game_hash[:away][:players][0].values[4][:shoe]
+  newArray = array.sort
+  newArray
+  return game_hash[:home][:players][0].values[3][:rebounds]
+end

@@ -158,7 +158,7 @@ def team_colors(string)
     end
 end
 
-def team_names(string)
+def team_names
   game_hash
   teams
     game_hash.each do |homeAwayKey, teamColorsPlayers|

@@ -275,6 +275,5 @@ def player_with_longest_name
   array << game_hash[:away][:players][0].keys[3].length
   array << game_hash[:away][:players][0].keys[4].length
   newArray = array.sort
-  newArray
-  binding.pry
+  newArray.length[-1]
 end

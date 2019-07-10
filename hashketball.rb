@@ -201,10 +201,10 @@ end
 
 def big_shoe_rebounds
   game_hash
-  
+  array = []
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
-
+binding.pry
 
         end
     end

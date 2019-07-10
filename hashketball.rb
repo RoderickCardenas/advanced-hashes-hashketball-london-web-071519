@@ -255,6 +255,6 @@ def winning_team
   awayTeam << game_hash[:away][:players][0].values[4][:points]
   away = awayTeam.reduce(0) { |sum, x| sum + x}
   
-  
+  game_hash[:home]
 
 end

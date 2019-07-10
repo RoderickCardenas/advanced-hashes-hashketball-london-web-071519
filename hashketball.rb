@@ -295,6 +295,7 @@ def long_name_steals_a_ton?
   array << game_hash[:away][:players][0].keys[4].length
   newArray = array.sort
   binding.pry
-  if game_hash[:away][:players][0].keys[1]
+  if game_hash[:away][:players][0].values[1][:steals] > 20
+    return true
   end
 end

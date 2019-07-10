@@ -173,8 +173,11 @@ def player_numbers(string)
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
                       binding.pry
           if valuesNameColorsPlayers.include?(string)
-
-            valuesNameColorsPlayers[string][:number]
+            playerNumbers << valuesNameColorsPlayers[0].values[0][:number]
+            valuesNameColorsPlayers[0].values[1][:number]
+            valuesNameColorsPlayers[0].values[2][:number]
+            valuesNameColorsPlayers[0].values[3][:number]
+            valuesNameColorsPlayers[0].values[4][:number]
           end
         end
     end

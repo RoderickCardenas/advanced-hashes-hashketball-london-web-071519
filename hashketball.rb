@@ -257,5 +257,5 @@ def winning_team
   
   
   binding.pry
-  return game_hash[:away][:players][0].keys[3]
+
 end

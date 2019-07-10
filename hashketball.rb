@@ -165,7 +165,7 @@ def team_names(string)
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
           if teamColorsPlayers[:team_name].include?(string)
             binding.pry
-            return teamColorsPlayers[:team_name]
+
           end
         end
     end

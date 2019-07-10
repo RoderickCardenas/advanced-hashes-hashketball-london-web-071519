@@ -199,7 +199,7 @@ def player_stats(string)
     end
 end
 
-def big_shoe_rebounds(string)
+def big_shoe_rebounds
   game_hash
   
     game_hash.each do |homeAwayKey, teamColorsPlayers|

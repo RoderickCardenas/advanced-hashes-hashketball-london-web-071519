@@ -127,7 +127,7 @@ end
 
 def num_points_scored(string)
   game_hash
-    game.each do |player, values|
+    game_hash.each do |player, values|
     binding.pry
     end
 end

@@ -183,7 +183,6 @@ def player_numbers(string)
             end
           end
           return playerNumbers
-          end
         end
     end
 end

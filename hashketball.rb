@@ -254,7 +254,7 @@ def winning_team
   array << game_hash[:away][:players][0].values[3][:points]
   array << game_hash[:away][:players][0].values[4][:points]
   
-  newArray
+  
   binding.pry
   return game_hash[:away][:players][0].keys[3]
 end

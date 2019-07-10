@@ -209,9 +209,10 @@ def big_shoe_rebounds
   array << game_hash[:home][:players][0].values[4][:shoe]
   
   array << game_hash[:away][:players][0].values[0][:shoe]
-  array << game_hash[:home][:players][0].values[1][:shoe]
-  array << game_hash[:home][:players][0].values[2][:shoe]
-  array << game_hash[:home][:players][0].values[3][:shoe]
-  array << game_hash[:home][:players][0].values[4][:shoe]
+  array << game_hash[:away][:players][0].values[1][:shoe]
+  array << game_hash[:away][:players][0].values[2][:shoe]
+  array << game_hash[:away][:players][0].values[3][:shoe]
+  array << game_hash[:away][:players][0].values[4][:shoe]
+  return array
 
 end

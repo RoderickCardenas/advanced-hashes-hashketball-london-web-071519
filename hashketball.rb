@@ -174,10 +174,10 @@ def player_numbers(string)
                       binding.pry
           if valuesNameColorsPlayers.include?(string)
             playerNumbers << valuesNameColorsPlayers[0].values[0][:number]
-            valuesNameColorsPlayers[0].values[1][:number]
-            valuesNameColorsPlayers[0].values[2][:number]
-            valuesNameColorsPlayers[0].values[3][:number]
-            valuesNameColorsPlayers[0].values[4][:number]
+            playerNumbers << valuesNameColorsPlayers[0].values[1][:number]
+            playerNumbers << valuesNameColorsPlayers[0].values[2][:number]
+            playerNumbers << valuesNameColorsPlayers[0].values[3][:number]
+            playerNumbers << valuesNameColorsPlayers[0].values[4][:number]
           end
         end
     end

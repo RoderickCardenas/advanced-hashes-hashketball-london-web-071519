@@ -256,6 +256,5 @@ def winning_team
   away = awayTeam.reduce(0) { |sum, x| sum + x}
   
   
-  binding.pry
 
 end

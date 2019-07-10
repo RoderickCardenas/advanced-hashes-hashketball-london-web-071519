@@ -135,3 +135,14 @@ def num_points_scored(string)
         end
     end
 end
+
+def show_size(string)
+  game_hash
+    game_hash.each do |homeAwayKey, teamColorsPlayers|
+        teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
+          if valuesNameColorsPlayers[0].include?(string)
+            return valuesNameColorsPlayers[0][string][:shoe]
+          end
+        end
+    end
+end

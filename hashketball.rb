@@ -168,6 +168,7 @@ end
 
 def player_numbers(string)
   game_hash
+  playerNumbers = []
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
                       binding.pry

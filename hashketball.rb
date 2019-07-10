@@ -166,7 +166,7 @@ def team_names
   return teams
 end
 
-def player_number(string)
+def player_numbers(string)
   game_hash
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|

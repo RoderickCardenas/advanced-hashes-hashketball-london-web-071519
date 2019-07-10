@@ -177,6 +177,11 @@ def player_numbers(string)
               playerNumbers << stats[1][:number]
               binding.pry
           end
+          if string == game_hash[:away][:team_name]
+            game_hash[:away][:players][0].each do |stats|
+              playerNumbers << stats[1][:number]
+              binding.pry
+          end
           return playerNumbers
           end
         end

@@ -239,19 +239,20 @@ end
 
 def winning_team
   game_hash
-  array = []
+  homeTeam = []
   array << game_hash[:home][:players][0].values[0][:points]
   array << game_hash[:home][:players][0].values[1][:points]
   array << game_hash[:home][:players][0].values[2][:points]
   array << game_hash[:home][:players][0].values[3][:points]
   array << game_hash[:home][:players][0].values[4][:points]
   
+  awayTeam = []
   array << game_hash[:away][:players][0].values[0][:points]
   array << game_hash[:away][:players][0].values[1][:points]
   array << game_hash[:away][:players][0].values[2][:points]
   array << game_hash[:away][:players][0].values[3][:points]
   array << game_hash[:away][:players][0].values[4][:points]
-  newArray = array.sort
+  home = homeTeam.sort
   newArray
   binding.pry
   return game_hash[:away][:players][0].keys[3]

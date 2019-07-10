@@ -264,7 +264,10 @@ def player_with_longest_name
   game_hash
   array = []
   array << game_hash[:home][:players][0].keys[0].length
-  array << game_hash[:home][:players][0].keys[0].length
+  array << game_hash[:home][:players][0].keys[1].length
+  array << game_hash[:home][:players][0].keys[2].length
+  array << game_hash[:home][:players][0].keys[3].length
+  array << game_hash[:home][:players][0].keys[4].length
   
   array << game_hash[:away][:players][0].values[0][:shoe]
   array << game_hash[:away][:players][0].values[1][:shoe]

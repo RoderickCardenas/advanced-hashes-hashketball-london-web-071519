@@ -260,7 +260,7 @@ def winning_team
 game_hash[:home].values[0]
 end
 
-def big_shoe_rebounds
+def player_with_longest_name
   game_hash
   array = []
   array << game_hash[:home][:players][0].values[0][:shoe]
@@ -276,5 +276,5 @@ def big_shoe_rebounds
   array << game_hash[:away][:players][0].values[4][:shoe]
   newArray = array.sort
   newArray
-  return game_hash[:home][:players][0].values[3][:rebounds]
+  binding.pry
 end

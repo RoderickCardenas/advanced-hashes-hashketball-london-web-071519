@@ -176,7 +176,7 @@ def player_numbers(string)
             game_hash[:home][:players][0].each do |stats|
               playerNumbers << stats[1][:number]
               binding.pry
-            end
+          end
           return playerNumbers
           end
         end

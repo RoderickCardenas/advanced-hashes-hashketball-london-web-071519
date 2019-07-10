@@ -129,7 +129,8 @@ def num_points_scored(string)
   game_hash
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
-          if 
+          
+          if valuesNameColorsPlayers[0].include?(string)
             return valuesNameColorsPlayers[0][string][:points]
           binding.pry
           end

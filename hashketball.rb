@@ -172,12 +172,10 @@ def player_numbers(string)
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
           if valuesNameColorsPlayers == string
+            game_hash[:home][:players][0].each do | can, i|
+              
             binding.pry
-            playerNumbers << game_hash[:home][:players][0].keys[0]
-            playerNumbers << valuesNameColorsPlayers[0].values[1][:number]
-            playerNumbers << valuesNameColorsPlayers[0].values[2][:number]
-            playerNumbers << valuesNameColorsPlayers[0].values[3][:number]
-            playerNumbers << valuesNameColorsPlayers[0].values[4][:number]
+          end
           end
         end
     end

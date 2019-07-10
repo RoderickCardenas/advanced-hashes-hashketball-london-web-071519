@@ -162,6 +162,7 @@ def team_names
   game_hash
   teams = []
   teams << game_hash[:home][:team_name]
-  
+  teams << game_hash[:away][:team_name]
+  return teams
 
 end

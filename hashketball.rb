@@ -175,11 +175,12 @@ def player_numbers(string)
           if string == game_hash[:home][:team_name]
             game_hash[:home][:players][0].each do |stats|
               playerNumbers << stats[1][:number]
-              binding.pry
+            end
           end
           if string == game_hash[:away][:team_name]
             game_hash[:away][:players][0].each do |stats|
               playerNumbers << stats[1][:number]
+            end
           end
           return playerNumbers
           end

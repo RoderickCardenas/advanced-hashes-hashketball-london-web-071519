@@ -171,6 +171,7 @@ def player_numbers(string)
   playerNumbers = []
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
+          
           if string == game_hash[:home][:team_name]
             game_hash[:home][:players][0].each do |stats|
               playerNumbers << stats[1][:number]

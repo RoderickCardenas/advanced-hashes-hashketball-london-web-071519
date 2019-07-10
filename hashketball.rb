@@ -240,11 +240,11 @@ end
 def winning_team
   game_hash
   homeTeam = []
-  array << game_hash[:home][:players][0].values[0][:points]
-  array << game_hash[:home][:players][0].values[1][:points]
-  array << game_hash[:home][:players][0].values[2][:points]
-  array << game_hash[:home][:players][0].values[3][:points]
-  array << game_hash[:home][:players][0].values[4][:points]
+  homeTeam << game_hash[:home][:players][0].values[0][:points]
+  homeTeam << game_hash[:home][:players][0].values[1][:points]
+  homeTeam << game_hash[:home][:players][0].values[2][:points]
+  homeTeam << game_hash[:home][:players][0].values[3][:points]
+  homeTeam << game_hash[:home][:players][0].values[4][:points]
   home = homeTeam.reduce(0) { |sum, x| sum + x}
   
   awayTeam = []

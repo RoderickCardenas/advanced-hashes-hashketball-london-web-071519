@@ -216,5 +216,5 @@ def big_shoe_rebounds
   newArray = array.sort
   newArray
   return game_hash[:home][:players][0].values[3][:rebounds]
-
 end
+

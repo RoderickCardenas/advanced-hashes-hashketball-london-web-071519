@@ -161,13 +161,5 @@ end
 def team_names
   game_hash
   teams = []
-    game_hash.each do |homeAwayKey, teamColorsPlayers|
-        teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
-                      binding.pry
-          if teamColorsPlayers[:team_name].include?("who cares")
-            binding.pry
 
-          end
-        end
-    end
 end

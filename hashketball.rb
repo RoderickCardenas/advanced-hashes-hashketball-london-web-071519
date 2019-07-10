@@ -294,6 +294,7 @@ def long_name_steals_a_ton?
   array << game_hash[:away][:players][0].keys[3].length
   array << game_hash[:away][:players][0].keys[4].length
   newArray = array.sort
-  
-  game_hash[:away][:players][0].keys[1]
+  binding.pry
+  if game_hash[:away][:players][0].keys[1]
+  end
 end

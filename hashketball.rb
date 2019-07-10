@@ -257,5 +257,5 @@ def winning_team
   away = awayTeam.reduce(0) { |sum, x| sum + x}
   #away = 85
 
-game_hash[:home].values[0
+game_hash[:home].values[0]
 end

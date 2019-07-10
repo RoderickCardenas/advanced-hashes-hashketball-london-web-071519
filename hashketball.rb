@@ -160,6 +160,7 @@ end
 
 def team_names(string)
   game_hash
+  teams
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
           if teamColorsPlayers[:team_name].include?(string)

@@ -130,6 +130,7 @@ def num_points_scored(string)
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |k, v|
           
-      binding.pry
+        binding.pry
+        end
     end
 end

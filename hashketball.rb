@@ -174,8 +174,8 @@ def player_numbers(string)
           if valuesNameColorsPlayers == string
             game_hash[:home][:players][0].each do |stats|
               playerNumbers << stats[:number]
-            binding.pry
-          end
+            end
+          return playerNumbers
           end
         end
     end

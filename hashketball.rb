@@ -278,3 +278,22 @@ def player_with_longest_name
   
   game_hash[:away][:players][0].keys[1]
 end
+
+def long_name_steals_a_ton?
+  game_hash
+  array = []
+  array << game_hash[:home][:players][0].keys[0].length
+  array << game_hash[:home][:players][0].keys[1].length
+  array << game_hash[:home][:players][0].keys[2].length
+  array << game_hash[:home][:players][0].keys[3].length
+  array << game_hash[:home][:players][0].keys[4].length
+  
+  array << game_hash[:away][:players][0].keys[0].length
+  array << game_hash[:away][:players][0].keys[1].length
+  array << game_hash[:away][:players][0].keys[2].length
+  array << game_hash[:away][:players][0].keys[3].length
+  array << game_hash[:away][:players][0].keys[4].length
+  newArray = array.sort
+  
+  game_hash[:away][:players][0].keys[1]
+end

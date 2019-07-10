@@ -234,5 +234,5 @@ def most_points_scored
   array << game_hash[:away][:players][0].values[4][:points]
   newArray = array.sort
   newArray
-  return game_hash[:away][:players][0]
+  return game_hash[:away][:players][0].values
 end

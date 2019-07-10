@@ -173,7 +173,7 @@ def player_numbers(string)
                       binding.pry
           if valuesNameColorsPlayers.include?(string)
 
-            valuesNameColorsPlayers[0][string][:number]
+            valuesNameColorsPlayers[string][:number]
           end
         end
     end

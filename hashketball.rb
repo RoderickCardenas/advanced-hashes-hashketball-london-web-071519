@@ -172,7 +172,7 @@ def player_numbers(string)
     game_hash.each do |homeAwayKey, teamColorsPlayers|
         teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
           if valuesNameColorsPlayers == string
-            game_hash[:home][:players][0].each do | can, i|
+            game_hash[:home][:players][0].each do | players, stats|
               
             binding.pry
           end

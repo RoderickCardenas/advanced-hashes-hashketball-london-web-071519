@@ -166,3 +166,13 @@ def team_names
   return teams
 end
 
+def player_number(string)
+  game_hash
+    game_hash.each do |homeAwayKey, teamColorsPlayers|
+        teamColorsPlayers.each do |teamNameColorsPlayers, valuesNameColorsPlayers|
+          if valuesNameColorsPlayers[0].include?(string)
+            return valuesNameColorsPlayers[0][string][:points]
+          end
+        end
+    end
+end

@@ -1,4 +1,4 @@
-# Write your code here!
+require 'pry'
 def game_hash
 
   gameHash = {
@@ -126,5 +126,6 @@ def game_hash
 end
 
 def num_points_scored(string)
-  
+  game_hash
+  binding.pry
 end

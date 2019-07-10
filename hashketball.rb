@@ -246,6 +246,7 @@ def winning_team
   homeTeam << game_hash[:home][:players][0].values[3][:points]
   homeTeam << game_hash[:home][:players][0].values[4][:points]
   home = homeTeam.reduce(0) { |sum, x| sum + x}
+  #home = 96
   
   awayTeam = []
   awayTeam << game_hash[:away][:players][0].values[0][:points]
@@ -254,7 +255,8 @@ def winning_team
   awayTeam << game_hash[:away][:players][0].values[3][:points]
   awayTeam << game_hash[:away][:players][0].values[4][:points]
   away = awayTeam.reduce(0) { |sum, x| sum + x}
-  
+  #away = 85
+  binding.pry
   game_hash[:home]
 
 end
